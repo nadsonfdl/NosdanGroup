@@ -1,0 +1,70 @@
+/* --- CONFIGURAÇÃO DE CORES GERAIS (Fallback) --- */
+body {
+    /* Cor suave para o fundo geral - (Correspondente a #121212) */
+    background-color: #121212 !important; 
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif; /* Fallback da fonte */
+}
+
+/* --- ESTILOS DE ANIMAÇÃO --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- ESTILOS DE ÍCONES DE SERVIÇO (Cards) --- */
+.icon-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem; /* 56px */
+    height: 3.5rem; /* 56px */
+    border-radius: 0.5rem;
+    background-color: #FFD600; /* Ícone sempre amarelo */
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Efeito de hover para o ícone */
+.group:hover .icon-service {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* --- ESTILO DE SEPARADOR DE SEÇÃO --- */
+.section-separator {
+    width: 80px;
+    height: 4px;
+    background-color: #FFD600;
+    margin: 0 auto 3rem auto; /* Centraliza e adiciona margem */
+    border-radius: 2px;
+}
+
+/* --- ESTILO DO BOTÃO FLUTUANTE DO WHATSAPP (FAB) --- */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFD600; /* Primary Yellow */
+    color: #000000; /* Texto/Ícone Preto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.1);
+    background-color: #ffe04d; /* Amarelo mais claro no hover */
+}
