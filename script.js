@@ -5,19 +5,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = mobileMenu.querySelectorAll('a');
+    
+    // Verifica se os elementos do menu existem antes de adicionar listeners
+    if (menuButton && mobileMenu) {
+        const navLinks = mobileMenu.querySelectorAll('a');
 
-    // Toggle para abrir e fechar o menu
-    menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
-
-    // Fechar o menu ao clicar em um link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
+        // Toggle para abrir e fechar o menu
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
-    });
+
+        // Fechar o menu ao clicar em um link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
 
     // =========================================================
     // 2. OBSERVER PARA ANIMAÇÃO DE SCROLL (FADE-IN)
@@ -48,19 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(element => {
         fadeInObserver.observe(element);
     });
-});
-
-// =========================================================
-// 3. OBSERVER PARA ALTERAÇÃO DE ESTILO DO HEADER (Opcional)
-// =========================================================
-
-// Cria um observer para aplicar sombra/borda ao header quando o scroll começar.
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        // Exemplo: header.classList.add('shadow-xl');
-        // Você já tem uma classe shadow-lg, mas pode ser útil para estilização futura.
-    } else {
-        // Exemplo: header.classList.remove('shadow-xl');
-    }
 });
