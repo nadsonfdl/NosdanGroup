@@ -1,329 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosdan Group | Tecnologia e Automação para Clínicas e Médicos</title>
-    <meta name="description" content="Transforme sua clínica em uma operação inteligente e moderna. Sites, automação, IA e dashboards criados para o setor médico.">
-    
-    <meta property="og:title" content="Nosdan Group | Tecnologia e Automação para Clínicas e Médicos">
-    <meta property="og:description" content="Soluções digitais que geram resultados reais: IA de Atendimento, Sites Profissionais, CRM e Dashboard.">
-    <meta property="og:type" content="website">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    
-    <style>
-        /* Configuração MÍNIMA de Cores para o Tailwind reconhecer as classes */
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-yellow': '#FFD600',
-                        'primary-black': '#1a1a1a',      
-                        'secondary-dark': '##121212', /* Corrigido, removendo um # extra */
-                        'light-gray': '#f4f4f4',
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </style>
-    
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosdan Group | Automação e Soluções Digitais</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
 </head>
+<body>
 
-<body class="font-sans text-white">
-    
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-XXXXX-Y');
-    </script>
-    
-    
-<script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'YOUR_PIXEL_ID');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-    /></noscript>
-    
-    <header class="sticky top-0 z-50 bg-secondary-dark/95 shadow-lg backdrop-blur-sm">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <a href="#inicio" class="text-3xl font-extrabold tracking-tight">
-                <span class="text-primary-yellow">Nosdan</span> <span class="text-white">Group</span>
-            </a>
-            
-            <nav class="hidden md:flex space-x-8 items-center">
-                <a href="#inicio" class="text-white hover:text-primary-yellow transition duration-300">Início</a>
-                <a href="#servicos" class="text-white hover:text-primary-yellow transition duration-300">Serviços</a>
-                <a href="#sobre" class="text-white hover:text-primary-yellow transition duration-300">Sobre</a>
-                <a href="#planos" class="text-white hover:text-primary-yellow transition duration-300">Planos</a>
-                <a href="https://wa.me/5561996528955" target="_blank" class="px-5 py-2 text-primary-black bg-primary-yellow font-bold rounded-lg hover:bg-yellow-400 transition duration-300 shadow-md">
-                    Fale Conosco
-                </a>
-            </nav>
-            
-            <button id="menu-button" class="md:hidden text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </div>
-        
-        <nav id="mobile-menu" class="hidden md:hidden bg-primary-black p-4 text-center">
-            <a href="#inicio" class="block py-2 text-white hover:text-primary-yellow transition duration-300 border-b border-secondary-dark">Início</a>
-            <a href="#servicos" class="block py-2 text-white hover:text-primary-yellow transition duration-300 border-b border-secondary-dark">Serviços</a>
-            <a href="#sobre" class="block py-2 text-white hover:text-primary-yellow transition duration-300 border-b border-secondary-dark">Sobre</a>
-            <a href="#planos" class="block py-2 text-white hover:text-primary-yellow transition duration-300 border-b border-secondary-dark">Planos</a>
-            <a href="https://wa.me/5561996528955" target="_blank" class="block mt-4 py-3 text-primary-black bg-primary-yellow font-bold rounded-lg hover:bg-yellow-400 transition duration-300 shadow-md">
-                    Fale Conosco
-                </a>
-        </nav>
-    </header>
+  <header>
+    <h1 class="logo">NOSDAN <span>GROUP</span></h1>
+    <a href="https://wa.me/5561996528955" class="whatsapp-btn-header">Falar no WhatsApp</a>
+  </header>
 
-    <main>
-        <section id="inicio" class="min-h-screen flex items-center bg-gradient-to-br from-secondary-dark via-secondary-dark to-primary-yellow/20 relative overflow-hidden">
-            
-<div class="absolute inset-0 z-0 opacity-20">
-                <div class="absolute w-64 h-64 bg-primary-yellow rounded-full blur-3xl opacity-10 -top-10 -left-10 animate-pulse"></div>
-                <div class="absolute w-96 h-96 bg-primary-yellow rounded-full blur-3xl opacity-5 bottom-0 right-0 animate-pulse-slow"></div>
-            </div>
-            
-            <div class="container mx-auto px-4 py-24 text-center relative z-10">
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight fade-in">
-                    Transforme sua clínica em uma operação <span class="text-primary-yellow">inteligente e moderna</span>.
-                </h1>
-                <p class="text-xl md:text-2xl text-light-gray mb-10 max-w-4xl mx-auto fade-in" style="transition-delay: 0.2s;">
-                    Sites, automação, inteligência artificial e dashboards criados para **médicos e pequenas clínicas**.
-                </p>
-                <a href="https://wa.me/5561996528955?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20digitais%20da%20Nosdan%20Group." target="_blank" class="inline-block px-10 py-4 text-xl text-primary-black bg-primary-yellow font-bold rounded-full hover:bg-yellow-400 transition duration-300 uppercase tracking-wider shadow-lg transform hover:scale-105 fade-in" style="transition-delay: 0.4s;">
-                    Quero saber mais
-                </a>
-            </div>
-        </section>
+  <section class="hero">
+    <h2>Enquanto você cuida dos pacientes, a tecnologia da Nosdan cuida do resto</h2>
+    <p>Automação, presença digital e resultados que fazem sua clínica crescer.</p>
+    <a href="https://wa.me/5561996528955" class="cta-btn">Falar com Especialista</a>
+  </section>
 
-        <section id="servicos" class="py-20 md:py-32 bg-secondary-dark">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4 text-white fade-in">
-                    Soluções que geram <span class="text-primary-yellow">resultados reais</span>
-                </h2>
-                <div class="section-separator fade-in" style="transition-delay: 0.1s;"></div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-primary-yellow/50 hover:ring-2 ring-primary-yellow group fade-in">
-                        <div class="icon-service">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2m-6 4h.01m-6 0h.01M9 19v2m6-2v2M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-primary-yellow">🤖 IA de Atendimento</h3>
-                        <p class="text-gray-300">Secretária virtual 24h que agenda, responde pacientes automaticamente e filtra leads no WhatsApp.</p>
-                    </div>
+  <section class="sobre">
+    <h3>Sobre a Nosdan Group</h3>
+    <p>Somos uma equipe especializada em soluções digitais para clínicas e profissionais da saúde. 
+    Nosso foco é simplificar sua rotina com tecnologia acessível e eficiente.</p>
+  </section>
 
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-primary-yellow/50 hover:ring-2 ring-primary-yellow group fade-in" style="transition-delay: 0.1s;">
-                        <div class="icon-service">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L12 19.25L14.25 17m-4.5 0v-4.5m4.5 4.5v-4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-primary-yellow">💻 Criação de Sites Profissionais</h3>
-                        <p class="text-gray-300">Sites modernos, rápidos e otimizados para clínicas e consultórios, focados em conversão.</p>
-                    </div>
+  <section class="servicos">
+    <h3>Nossos Serviços</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>🤖 IA de Atendimento</h4>
+        <p>Secretária virtual via WhatsApp que responde, agenda e cuida dos seus pacientes automaticamente.</p>
+      </div>
+      <div class="card">
+        <h4>🌐 Criação de Sites</h4>
+        <p>Sites modernos, rápidos e com design profissional, prontos para campanhas e presença digital.</p>
+      </div>
+      <div class="card">
+        <h4>📊 Dashboards e BI</h4>
+        <p>Visualize seus resultados com painéis inteligentes integrados a planilhas ou sistemas da clínica.</p>
+      </div>
+      <div class="card">
+        <h4>💼 CRM Integrado</h4>
+        <p>Gestão de pacientes e atendimentos em um único sistema, conectado com suas automações.</p>
+      </div>
+    </div>
+  </section>
 
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-primary-yellow/50 hover:ring-2 ring-primary-yellow group fade-in" style="transition-delay: 0.2s;">
-                        <div class="icon-service">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-primary-yellow">📅 CRM Médico e Automação</h3>
-                        <p class="text-gray-300">Organize pacientes, retornos e lembretes automáticos para maximizar a fidelização.</p>
-                    </div>
-                    
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-primary-yellow/50 hover:ring-2 ring-primary-yellow group fade-in" style="transition-delay: 0.3s;">
-                        <div class="icon-service">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-6v6m-4-8v8m12-8v2m-12-2v2m8-14l-4 4-4-4"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-primary-yellow">📊 Dashboard e BI</h3>
-                        <p class="text-gray-300">Painéis inteligentes para acompanhar dados de performance vindos de planilhas ou sistemas.</p>
-                    </div>
-                    
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl transition duration-500 hover:shadow-primary-yellow/50 hover:ring-2 ring-primary-yellow group fade-in" style="transition-delay: 0.4s;">
-                        <div class="icon-service">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-3 text-primary-yellow">🚀 Automação de Campanhas</h3>
-                        <p class="text-gray-300">Mensagens automáticas e campanhas que mantêm o relacionamento e a agenda sempre cheia.</p>
-                    </div>
-                    
-                    <a href="https://wa.me/5561996528955?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20digitais%20da%20Nosdan%20Group." target="_blank" class="bg-primary-yellow p-8 rounded-xl flex flex-col justify-center items-center text-center transition duration-500 hover:bg-yellow-400 fade-in" style="transition-delay: 0.5s;">
-                        <h3 class="text-2xl font-bold mb-4 text-primary-black">Pronto para transformar sua clínica?</h3>
-                        <p class="text-primary-black mb-6">Fale com um de nossos especialistas agora mesmo.</p>
-                        <span class="px-6 py-3 text-lg text-white bg-primary-black font-bold rounded-full hover:bg-gray-800 transition duration-300">
-                            Falar com Especialista
-                        </span>
-                    </a>
-                    
-                </div>
-            </div>
-        </section>
+  <section class="cta-final">
+    <h3>Quer levar sua clínica para o digital?</h3>
+    <p>Tenha site, automação, IA e relatórios em um só lugar.</p>
+    <a href="https://wa.me/5561996528955" class="cta-btn">Falar Agora no WhatsApp</a>
+  </section>
 
-        <section id="sobre" class="py-20 md:py-32 bg-secondary-dark">
-            <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                
-                <div class="fade-in">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">
-                        Tecnologia <span class="text-primary-yellow">Simples</span> para quem cuida de <span class="text-primary-yellow">Pessoas</span>.
-                    </h2>
-                    <div class="section-separator mx-0 mb-8" style="transition-delay: 0.1s;"></div>
-                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                        A **Nosdan Group** nasceu com o propósito de simplificar a tecnologia para quem cuida de pessoas.
-                        Atuamos com foco em **médicos particulares e pequenas clínicas**, criando soluções digitais acessíveis e inteligentes — da presença online à automação completa da rotina.
-                    </p>
-                    <blockquote class="border-l-4 border-primary-yellow pl-4 italic text-xl text-primary-yellow font-semibold">
-                        “Seu tempo é valioso. A tecnologia faz o resto.”
-                    </blockquote>
-                </div>
-                
-                <div class="relative hidden lg:block fade-in" style="transition-delay: 0.2s;">
-                    <div class="w-full h-80 bg-primary-yellow/20 rounded-xl flex items-center justify-center animate-pulse-light">
-                        <svg class="w-32 h-32 text-primary-yellow opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L12 19.25L14.25 17m-4.5 0v-4.5m4.5 4.5v-4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        
-        <section id="planos" class="py-20 md:py-32 bg-secondary-dark">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4 text-white fade-in">
-                    Escolha o plano ideal para <span class="text-primary-yellow">sua clínica</span>
-                </h2>
-                <div class="section-separator fade-in" style="transition-delay: 0.1s;"></div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-12">
-                    
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl flex flex-col items-center text-center border-b-4 border-primary-yellow fade-in">
-                        <h3 class="text-3xl font-bold mb-2 text-primary-yellow">Start</h3>
-                        <p class="text-gray-400 mb-6">O essencial para começar a automatizar.</p>
-                        <div class="flex-grow w-full">
-                            <ul class="text-left space-y-3 mb-8 text-gray-200">
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> Criação de Site Profissional</li>
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> IA de Atendimento (WhatsApp)</li>
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> Suporte Técnico Inicial</li>
-                            </ul>
-                        </div>
-                        <a href="https://wa.me/5561996528955?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Start." target="_blank" class="w-full px-6 py-3 text-lg text-primary-black bg-primary-yellow font-bold rounded-full hover:bg-yellow-400 transition duration-300 mt-4">
-                            Falar com Especialista
-                        </a>
-                    </div>
-                    
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl flex flex-col items-center text-center ring-4 ring-primary-yellow transform scale-105 relative fade-in" style="transition-delay: 0.1s;">
-                        <span class="absolute -top-4 px-4 py-1 text-sm font-bold text-primary-black bg-primary-yellow rounded-full shadow-md uppercase">Mais Popular</span>
-                        <h3 class="text-3xl font-bold mb-2 text-primary-yellow">Pro</h3>
-                        <p class="text-gray-400 mb-6">A solução completa para automação e gestão.</p>
-                        <div class="flex-grow w-full">
-                            <ul class="text-left space-y-3 mb-8 text-gray-200">
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> **Tudo do Plano Start**</li>
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> CRM Médico e Automação de Retornos</li>
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> Automação de Campanhas (Follow-up)</li>
-                            </ul>
-                        </div>
-                        <a href="https://wa.me/5561996528955?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Pro." target="_blank" class="w-full px-6 py-3 text-lg text-primary-black bg-primary-yellow font-bold rounded-full hover:bg-yellow-400 transition duration-300 mt-4">
-                            Falar com Especialista
-                        </a>
-                    </div>
+  <footer>
+    <p>© 2025 Nosdan Group — Tecnologia que impulsiona sua clínica.</p>
+  </footer>
 
-                    <div class="bg-primary-black p-8 rounded-xl shadow-2xl flex flex-col items-center text-center border-b-4 border-primary-yellow fade-in" style="transition-delay: 0.2s;">
-                        <h3 class="text-3xl font-bold mb-2 text-primary-yellow">Premium</h3>
-                        <p class="text-gray-400 mb-6">O máximo em integração e inteligência de dados.</p>
-                        <div class="flex-grow w-full">
-                            <ul class="text-left space-y-3 mb-8 text-gray-200">
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> **Tudo do Plano Pro**</li>
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> Dashboard e BI (Business Intelligence)</li>
-                                <li class="flex items-start"><span class="text-primary-yellow mr-3 font-extrabold text-xl">•</span> Integração de Sistemas (API)</li>
-                            </ul>
-                        </div>
-                        <a href="https://wa.me/5561996528955?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Premium." target="_blank" class="w-full px-6 py-3 text-lg text-primary-black bg-primary-yellow font-bold rounded-full hover:bg-yellow-400 transition duration-300 mt-4">
-                            Falar com Especialista
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        
-        <section class="py-20 md:py-32 bg-primary-black">
-            <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4 text-white fade-in">
-                    Quem usa, <span class="text-primary-yellow">recomenda</span>
-                </h2>
-                <div class="section-separator fade-in" style="transition-delay: 0.1s;"></div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
-                    
-                    <div class="bg-primary-black p-6 rounded-xl shadow-lg border-l-4 border-primary-yellow fade-in">
-                        <p class="text-gray-300 italic mb-4">"O site ficou impecável e a IA de atendimento reduziu drasticamente a sobrecarga da minha secretária. Agora, as pacientes já chegam agendadas!"</p>
-                        <p class="text-primary-yellow font-semibold">— Dr. Ricardo Mendes, Cardiologista</p>
-                    </div>
-                    
-                    <div class="bg-primary-black p-6 rounded-xl shadow-lg border-l-4 border-primary-yellow fade-in" style="transition-delay: 0.1s;">
-                        <p class="text-gray-300 italic mb-4">"Graças ao CRM, conseguimos organizar o fluxo de retorno e aumentar em 30% a taxa de revisitas. A Nosdan realmente entende do nosso nicho."</p>
-                        <p class="text-primary-yellow font-semibold">— Dra. Ana Lúcia, Dermatologista</p>
-                    </div>
-
-                    <div class="bg-primary-black p-6 rounded-xl shadow-lg border-l-4 border-primary-yellow fade-in" style="transition-delay: 0.2s;">
-                        <p class="text-gray-300 italic mb-4">"O Dashboard nos deu clareza sobre o que funciona e o que não funciona no consultório. É tecnologia de ponta com linguagem simples."</p>
-                        <p class="text-primary-yellow font-semibold">— Clínica Essencial, Odontologia</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-    </main>
-    
-    <footer class="bg-primary-black border-t-2 border-primary-yellow py-8">
-        <div class="container mx-auto px-4 text-center">
-            
-            <p class="text-primary-yellow text-lg font-bold mb-4">Nosdan Group</p>
-            
-            <p class="text-gray-400 mb-6">© 2025 Nosdan Group — Tecnologia que conecta resultados.</p>
-            
-            <div class="flex justify-center space-x-6 text-2xl">
-                <a href="#" target="_blank" class="text-gray-400 hover:text-primary-yellow transition duration-300" aria-label="Instagram">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.766.012 3.704.054 1.05.043 1.77.214 2.19.38.4.155.776.368 1.12.71.343.344.557.72.71 1.12.166.42.337 1.14.38 2.19.042.938.054 1.274.054 3.704s-.012 2.766-.054 3.704c-.043 1.05-.214 1.77-.38 2.19-.155.4-.368.776-.71 1.12-.344.343-.72.557-1.12.71-.42.166-1.14-.337-2.19-.38-.938-.042-1.274-.054-3.704-.054s-2.766-.012-3.704-.054c-1.05-.043-1.77-.214-2.19-.38-.4-.155-.776-.368-1.12-.71-.343-.344-.72-.557-1.12-.71-.166-.42-.337-1.14-.38-2.19-.042-.938-.054-1.274-.054-3.704s.012-2.766.054-3.704c.043-1.05.214-1.77.38-2.19.155-.4.368-.776.71-1.12.344-.343.72-.557 1.12-.71.42-.166 1.14-.337 2.19-.38.938-.042 1.274-.054 3.704-.054zm0 2.16c-2.32 0-2.585.013-3.485.053-.845.035-1.37.202-1.61.297-.24.095-.445.233-.64.425-.192.195-.33.4-.425.64-.095.24-.262.765-.297 1.61-.04 1.215-.053 1.55-.053 3.485s.013 2.585.053 3.485c.035.845.202 1.37.297 1.61.095.24.233.445.425.64.195.192.4.33.64.425.24.095.765.262 1.61.297.898.04 1.233.053 3.485.053s2.585-.013 3.485-.053c.845-.035 1.37-.202 1.61-.297.24-.095.445-.233.64-.425.192-.195.33-.4.425-.64.095-.24.262-.765.297-1.61.04-1.215.053-1.55.053-3.485s-.013-2.585-.053-3.485c-.035-.845-.202-1.37-.297-1.61-.095-.24-.233-.445-.425-.64-.195-.192-.4-.33-.64-.425-.24-.095-.765-.262-1.61-.297-.898-.04-1.233-.053-3.485-.053zM12.315 6a6.315 6.315 0 100 12.63 6.315 6.315 0 000-12.63zm0 2.16a4.155 4.155 0 110 8.31 4.155 4.155 0 010-8.31zm6.75-2.06a1.215 1.215 0 100 2.43 1.215 1.215 0 000-2.43z"></path></svg>
-                </a>
-                
-                <a href="https://wa.me/5561996528955" target="_blank" class="text-gray-400 hover:text-primary-yellow transition duration-300" aria-label="WhatsApp">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.0007 2C6.486 2 2 6.486 2 12C2 13.9118 2.50285 15.6883 3.39766 17.2407L2.01639 22.0142L6.81665 20.612C8.32439 21.4984 10.107 22 12.0007 22C17.5147 22 22.0007 17.514 22.0007 12C22.0007 6.486 17.5147 2 12.0007 2ZM17.1557 15.111C16.8164 15.7533 14.1979 17.1643 13.8429 17.3197C13.4879 17.475 13.2001 17.5534 12.9123 17.475C12.6246 17.3967 11.6963 17.0784 10.4578 16.035C9.47152 15.1764 8.81831 14.123 8.57795 13.7712C8.3376 13.4194 8.16398 13.3364 8.08569 13.2536C8.0074 13.1709 6.94052 11.7513 6.94052 10.3317C6.94052 8.91216 7.64933 8.23611 7.96035 7.91572C8.27137 7.59533 8.61066 7.4704 8.94995 7.4704C9.17721 7.4704 9.38885 7.4704 9.57606 7.4704C9.77884 7.4704 10.0381 7.42898 10.2078 7.82037C10.435 8.35123 10.9845 9.7708 11.042 9.88607C11.0995 10.0013 11.157 10.1388 11.0787 10.3703C11.0005 10.6018 10.943 10.7457 10.8329 10.8732C10.7229 11.0007 10.6079 11.1281 10.4702 11.2657C10.3325 11.4032 10.1948 11.5542 10.3503 11.8385C10.5058 12.1228 11.0553 12.9814 11.8795 13.6849C12.9463 14.5953 13.8052 14.88 14.0799 15.0353C14.3546 15.1907 14.5101 15.1587 14.6539 14.9934C14.8095 14.8282 15.2266 14.2829 15.486 13.882C15.7453 13.4811 16.0142 13.5387 16.2258 13.6213C16.4375 13.7039 17.5147 14.1953 17.8025 14.3606C18.0902 14.526 18.2831 14.6043 18.3614 14.7318C18.4397 14.8593 18.4397 15.0908 18.3614 15.1907C18.2831 15.2907 17.4947 15.8927 17.1557 15.111Z"></path></svg>
-                </a>
-                
-                <a href="mailto:contato@nosdangroup.com.br" class="text-gray-400 hover:text-primary-yellow transition duration-300" aria-label="E-mail">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.5 8.75L12 15.3125L22.5 8.75V19C22.5 19.4142 22.1642 19.75 21.75 19.75H2.25C1.83579 19.75 1.5 19.4142 1.5 19V8.75ZM1.5 5.25H22.5C22.5 5.66421 22.1642 6 21.75 6H2.25C1.83579 6 1.5 5.66421 1.5 5.25ZM2.25 4.5H21.75C22.0837 4.5 22.3789 4.67134 22.5625 4.9375L12 11.5L1.4375 4.9375C1.62108 4.67134 1.91630 4.5 2.25 4.5ZM1.5 5.25V19C1.5 19.8284 2.17157 20.5 3 20.5H21C21.8284 20.5 22.5 19.8284 22.5 19V5.25H1.5Z"></path></svg>
-                </a>
-            </div>
-            
-        </div>
-    </footer>
-
-    <a href="https://wa.me/5561996528955?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20digitais%20da%20Nosdan%20Group." target="_blank" class="whatsapp-fab" aria-label="Fale Conosco pelo WhatsApp">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.0007 2C6.486 2 2 6.486 2 12C2 13.9118 2.50285 15.6883 3.39766 17.2407L2.01639 22.0142L6.81665 20.612C8.32439 21.4984 10.107 22 12.0007 22C17.5147 22 22.0007 17.514 22.0007 12C22.0007 6.486 17.5147 2 12.0007 2ZM17.1557 15.111C16.8164 15.7533 14.1979 17.1643 13.8429 17.3197C13.4879 17.475 13.2001 17.5534 12.9123 17.475C12.6246 17.3967 11.6963 17.0784 10.4578 16.035C9.47152 15.1764 8.81831 14.123 8.57795 13.7712C8.3376 13.4194 8.16398 13.3364 8.08569 13.2536C8.0074 13.1709 6.94052 11.7513 6.94052 10.3317C6.94052 8.91216 7.64933 8.23611 7.96035 7.91572C8.27137 7.59533 8.61066 7.4704 8.94995 7.4704C9.17721 7.4704 9.38885 7.4704 9.57606 7.4704C9.77884 7.4704 10.0381 7.42898 10.2078 7.82037C10.435 8.35123 10.9845 9.7708 11.042 9.88607C11.0995 10.0013 11.157 10.1388 11.0787 10.3703C11.0005 10.6018 10.943 10.7457 10.8329 10.8732C10.7229 11.0007 10.6079 11.1281 10.4702 11.2657C10.3325 11.4032 10.1948 11.5542 10.3503 11.8385C10.5058 12.1228 11.0553 12.9814 11.8795 13.6849C12.9463 14.5953 13.8052 14.88 14.0799 15.0353C14.3546 15.1907 14.5101 15.1587 14.6539 14.9934C14.8095 14.8282 15.2266 14.2829 15.486 13.882C15.7453 13.4811 16.0142 13.5387 16.2258 13.6213C16.4375 13.7039 17.5147 14.1953 17.8025 14.3606C18.0902 14.526 18.2831 14.6043 18.3614 14.7318C18.4397 14.8593 18.4397 15.0908 18.3614 15.1907C18.2831 15.2907 17.4947 15.8927 17.1557 15.111Z"></path></svg>
-    </a>
-
-    <script src="script.js"></script>
-    
+  <a href="https://wa.me/5561996528955" class="whatsapp-float">💬</a>
 </body>
 </html>
